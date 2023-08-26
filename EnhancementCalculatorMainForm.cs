@@ -161,5 +161,22 @@ namespace BDO_Enhacement
                 cmbItemName.Enabled = true;
             }
         }
+
+        private void cmbItemName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Item item = new Item(cmbItemType.Text, cmbItemName.Text);
+
+            lblPriSoftcapStack.Text = $"({item.SoftcapStacks["Pri"].ToString()})";
+            lblDuoSoftcapStack.Text = $"({item.SoftcapStacks["Duo"].ToString()})";
+            lblTriSoftcapStack.Text = $"({item.SoftcapStacks["Tri"].ToString()})";
+            lblTetSoftcapStack.Text = $"({item.SoftcapStacks["Tet"].ToString()})";
+            lblPenSoftcapStack.Text = $"({item.SoftcapStacks["Pen"].ToString()})";
+
+            lblPriCronsNeeded.Text = $"({item.CronsNeeded["Base"]})";
+            lblDuoCronsNeeded.Text = $"({item.CronsNeeded["Pri"]})";
+            lblTriCronsNeeded.Text = $"({item.CronsNeeded["Duo"]})";
+            lblTetCronsNeeded.Text = $"({item.CronsNeeded["Tri"]})";
+            lblPenCronsNeeded.Text = $"({item.CronsNeeded["Tet"]})";
+        }
     }
 }

@@ -469,6 +469,7 @@
             this.cmbItemName.Name = "cmbItemName";
             this.cmbItemName.Size = new System.Drawing.Size(291, 29);
             this.cmbItemName.TabIndex = 5;
+            this.cmbItemName.SelectedIndexChanged += new System.EventHandler(this.cmbItemName_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -491,7 +492,7 @@
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
