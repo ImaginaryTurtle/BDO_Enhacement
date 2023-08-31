@@ -599,7 +599,6 @@
             this.cmbDesiredItemLevel.Enabled = false;
             this.cmbDesiredItemLevel.FormattingEnabled = true;
             this.cmbDesiredItemLevel.Items.AddRange(new object[] {
-            "Pri",
             "Duo",
             "Tri",
             "Tet",

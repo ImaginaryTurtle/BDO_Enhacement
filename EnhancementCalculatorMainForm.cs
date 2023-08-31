@@ -177,6 +177,23 @@ namespace BDO_Enhacement
             lblTriCronsNeeded.Text = $"({item.CronsNeeded["Duo"]})";
             lblTetCronsNeeded.Text = $"({item.CronsNeeded["Tri"]})";
             lblPenCronsNeeded.Text = $"({item.CronsNeeded["Tet"]})";
+
+            cmbCurrentItemLevel.Enabled = true;
+            cmbDesiredItemLevel.Enabled = true;
+            
+            nudCronCost.Enabled = true;
+            nudCurItemCost.Enabled = true;
+            if(cmbItemType.SelectedIndex == 0)
+            {
+                nudBaseItemCost.Enabled = true;
+            }
+
+            nudPriStack.Enabled = true;
+            nudDuoStack.Enabled = true;
+            nudTriStack.Enabled = true;
+            nudTetStack.Enabled = true;
+            nudPenStack.Enabled = true;
         }
+
     }
 }
